@@ -154,3 +154,25 @@ To learn more, see the [Contributor Guide].
 [fields]: https://invoice2data.readthedocs.io/latest/recommended-template-fields.html
 [ai]: https://invoice2data.readthedocs.io/latest/ai.html
 [faq]: https://invoice2data.readthedocs.io/latest/faq.html
+
+## My additions
+
+### Installation
+
+```sh
+cd invoice2data
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install invoice2data
+```
+
+### Rename invoice
+
+```sh
+cd invoice2data
+
+invoice2data -t templates/ input/<invoice.pdf>
+```
